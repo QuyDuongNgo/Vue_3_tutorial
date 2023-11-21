@@ -6,3 +6,4 @@ Mouse Event
     @mouseleave
 attribute binding
     v-bind hoặc :
+computed:
