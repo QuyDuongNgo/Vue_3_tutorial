@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning vue</title>
 </head>
+<style>
+    .box {
+        padding: 100px 0;
+        width: 400px;
+        text-align: center;
+        background: #ddd;
+        margin: 20px;
+        display: inline-block;
+    }
+</style>
 <body>
     <h1>Hello vue</h1>
 
@@ -19,7 +29,14 @@
             <span v-else>Show Books</span>
         </button>
 
-        <div v-show="showBook">Current Showing Books</div>
+        <br>
+        <!-- Mouse Event -->
+        <div class="box" @mouseover="handleEvent($event, 5)">Mouseover (enter)</div>
+        <div class="box" @mouseleave="handleEvent">Mouseleave</div>
+        <div class="box" @dblclick="handleEvent">Double Click</div>
+        <div class="box" @mousemove="handleMouseMove">
+            position - {{ x }} {{ y }}
+        </div>
     </div>
 
 </body>
