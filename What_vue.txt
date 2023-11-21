@@ -4,3 +4,5 @@ Mouse Event
     @mouseover : Di chuyên chuột
     @dblclick: Double click
     @mouseleave
+attribute binding
+    v-bind hoặc :

@@ -9,11 +9,19 @@
     <h1>Hello vue</h1>
 
     <div id="app">
-        <div v-if="showBook">
+        <!-- Attribute binding -->
+        <!-- <a :href="url">The Best Website</a> -->
 
+        <div v-if="showBook">
             <ul>
                 <li v-for="book in books" style="list-style: none;">
-                    {{ book.title }} - {{ book.author }}
+                    <img :src="book.image" :alt="book.title" width="250">
+                    <h3>
+                        {{ book.title }}
+                    </h3>
+                    <p>
+                        {{ book.author }}
+                    </p>
                 </li>
             </ul>
 
