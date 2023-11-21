@@ -7,3 +7,10 @@ Mouse Event
 attribute binding
     v-bind hoặc :
 computed:
+
+# cấu trúc thư mục Vue
+ - node_modules : Nơi lưu trữ bất kì thư viện hoặc phụ thuộc nào được sử dụng trong dự án
+ - public : Thư mục chung chứa tệp HTML đã được lập chỉ mục, tệp này được gửi đến trình duyệt ban đầu
+        + index.html: có thẻ div trống và là nơi Vue sẽ tự động được đưa vào
+ - src: Tất cả mã nguồn, các thành phần, ẫu và CSS khác nhau của dự án sẽ tồn tại bên trong
+        + main.js: là tệp Javascript khởi động ứng dụng
